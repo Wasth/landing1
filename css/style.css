@@ -4,6 +4,9 @@
     font-family: 'Open Sans';
     font-weight: 300;
 }
+b {
+    font-weight: bold;
+}
 .content {
     width: 80%;
     min-width: 1200px;
@@ -22,12 +25,15 @@
     text-align: left;
 }
 #headerGrid .email-link {
-    color: #337df1;
+    color: rgb(231, 76, 60);;
 }
 header #menuWrapper {
     background: #333;
     /*padding: 15px;*/
 
+}
+header #menu {
+    text-align: center;
 }
 header #menu a {
     color: white;
@@ -37,22 +43,23 @@ header #menu .item {
     display: inline-block;
     padding: 15px;
     font-weight: normal;
+    font-size: 1.5em;
 }
 header #menu .item:hover {
-    background: #337df1;
+    background: rgb(231, 76, 60);;
 }
 /*MAIN BLOCK*/
 #mainBlockWrapper {
     background: url("../img/bokeh-cover-bg.jpg");
     background-size: cover;
-    height: 800px;
+    height: 1000px;
     color: white;
 }
-#mainBlock .title {
+#mainBlockWrapper .title {
     text-align: center;
     padding: 45px 0;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 6em;
 }
 #mainBlock #mainGrid {
     display: grid;
@@ -60,8 +67,9 @@ header #menu .item:hover {
 }
 #mainGrid ul {
     display: inline-block;
-    font-size: 2em;
+    font-size: 3em;
     text-align: left;
+    margin-top: 200px;
 }
 #mainGrid #advantages {
     text-align: center;
@@ -70,7 +78,7 @@ header #menu .item:hover {
     text-align: center;
 }
 #applicationForm {
-    border: 5px solid #337df1;
+    border: 5px solid rgb(231, 76, 60);;
     background: white;
     border-radius: 30px;
     padding: 30px;
@@ -81,6 +89,9 @@ header #menu .item:hover {
     padding: 15px;
     font-size: 1em;
     margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid gray;
+    /*background: #f4f8ff;*/
 }
 #applicationForm textarea {
     resize: none;
@@ -88,4 +99,24 @@ header #menu .item:hover {
 #applicationForm button {
     width: 100%;
     font-size: 1em;
+    padding: 15px;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    background: rgb(231, 76, 60);;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.12);;
+}
+#applicationForm button:hover {
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+/*OUR PRODUCTION BLOCK*/
+#ourProductionGrid {
+    disaply: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#ourProductionGrid img {
+    width: 100%;
 }
