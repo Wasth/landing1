@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+.content {
+    width: 80%;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+/*HEADER*/
+#headerGrid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#headerGrid div {
+    text-align: center;
+    padding: 15px;
+}
+#headerGrid div:first-child {
+    text-align: left;
+}
+#headerGrid .email-link {
+    color: #337df1;
+}
+header #menuWrapper {
+    background: #333;
+    /*padding: 15px;*/
+
+}
+header #menu a {
+    color: white;
+    text-decoration: none;
+}
+header #menu .item {
+    display: inline-block;
+    padding: 15px;
+    font-weight: normal;
+}
+header #menu .item:hover {
+    background: #337df1;
+}
+/*MAIN BLOCK*/
+#mainBlockWrapper {
+    background: url("../img/bokeh-cover-bg.jpg");
+    background-size: cover;
+    height: 800px;
+    color: white;
+}
+#mainBlock .title {
+    text-align: center;
+    padding: 45px 0;
+    font-weight: 400;
+    font-size: 3em;
+}
+#mainBlock #mainGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#mainGrid ul {
+    display: inline-block;
+    font-size: 2em;
+    text-align: left;
+}
+#mainGrid #advantages {
+    text-align: center;
+}
+#applicationForm h2 {
+    text-align: center;
+}
+#applicationForm {
+    border: 5px solid #337df1;
+    background: white;
+    border-radius: 30px;
+    padding: 30px;
+    color: black;
+}
+#applicationForm input, #applicationForm textarea{
+    width: calc(100% - 30px);
+    padding: 15px;
+    font-size: 1em;
+    margin: 10px 0;
+}
+#applicationForm textarea {
+    resize: none;
+}
+#applicationForm button {
+    width: 100%;
+    font-size: 1em;
+}
