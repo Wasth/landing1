@@ -113,9 +113,21 @@ header #menu .item:hover {
     cursor: pointer;
 }
 /*OUR PRODUCTION BLOCK*/
+#ourProductionWrapper {
+    margin-top: 30px;
+}
+#ourProductionWrapper h1 {
+    text-align: center;
+    padding: 15px;
+    font-size: ;
+}
+#ourProductionWrapper p {
+    text-align: center;
+}
 #ourProductionGrid {
-    disaply: grid;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
 }
 #ourProductionGrid img {
     width: 100%;
