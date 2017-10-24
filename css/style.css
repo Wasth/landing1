@@ -115,7 +115,7 @@ header #menu .item:hover {
 /*OUR PRODUCTION BLOCK*/
 #ourProductionWrapper {
     margin-top: 30px;
-    background: gray;
+    background: #f1f1f1;
 }
 #ourProductionWrapper h1 {
     text-align: center;
