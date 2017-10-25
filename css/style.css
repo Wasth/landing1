@@ -293,3 +293,39 @@ shippedProductionWrapper {
     font-size: 1.2em;
     padding-bottom: 15px;
 }
+/*OUR CERTIFICATES*/
+#ourCertificatesWrapper {
+    padding-bottom: 15px;
+}
+#ourCertificatesWrapper h1 {
+    text-align: center;
+    padding: 15px 0;
+}
+#ourCertificates {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 200px;
+}
+#ourCertificates div img {
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+/*REVIEWS*/
+#reviewsWrapper {
+    background: #f1f1f1;
+    padding-bottom: 30px;
+}
+#reviewsWrapper h1 {
+    text-align: center;
+    padding: 15px 0;
+}
+#reviewsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 200px;
+    grid-row-gap: 30px;
+}
+#reviewsGrid div img {
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
