@@ -265,9 +265,31 @@ shippedProductionWrapper {
     text-align: center;
 }
 /*GALLERY OF PRODUCTION*/
-
-#productionGallery {
+#productionGalleryWrapper {
+    background: url('../img/ourproductionback.png');
+    background-size: cover;
+    background-position: center center;
+}
+#productionGalleryGrid {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-column-gap: 10px;
+    grid-gap: 10px;
+}
+#productionGalleryWrapper h1 {
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+}
+#productionGalleryGrid div {
+    height: 300px;
+}
+#productionGalleryGrid div img {
+    width: 100%;
+}
+#productionGalleryContent {
+    text-align: justify;
+    color: white;
+    font-size: 1.2em;
+    padding-bottom: 15px;
 }
