@@ -50,7 +50,7 @@ header #menu .item:hover {
 }
 /*MAIN BLOCK*/
 #mainBlockWrapper {
-    background: url("../img/bokeh-cover-bg.jpg");
+    background: url("../img/main-bg.png");
     background-size: cover;
     height: 1100px;
     color: white;
