@@ -8,8 +8,8 @@ b {
     font-weight: bold;
 }
 .content {
-    width: 80%;
-    min-width: 1200px;
+
+    max-width: 1200px;
     margin: 0 auto;
 }
 /*HEADER*/
@@ -21,16 +21,27 @@ b {
     text-align: center;
     padding: 15px;
 }
+#headerGrid div h2 {
+    font-size: 20px;
+}
 #headerGrid div:first-child {
     text-align: left;
 }
+#headerGrid div:first-child img{
+    float: left;
+    margin-right: 15px;
+}
 #headerGrid .email-link {
-    color: rgb(231, 76, 60);;
+    color: rgb(231, 76, 60);
+    font-size: 22px;
+}
+#headerGrid #number {
+        font-size: 22px;
 }
 header #menuWrapper {
-    background: #333;
+    background: #232323;
     /*padding: 15px;*/
-
+    border-top: 4px solid rgb(231, 76, 60);
 }
 header #menu {
     text-align: center;
@@ -42,43 +53,54 @@ header #menu a {
 header #menu .item {
     display: inline-block;
     padding: 15px;
-    font-weight: normal;
-    font-size: 1.5em;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 header #menu .item:hover {
     background: rgb(231, 76, 60);;
 }
 /*MAIN BLOCK*/
 #mainBlockWrapper {
-    background: url("../img/main-bg.png");
+    background: url("../img/main-bg.jpg");
     background-size: cover;
-    height: 1100px;
+    background-position: center center;
+    height: 750px;
     color: white;
 }
 #mainBlockWrapper .title {
     text-align: center;
     padding: 45px 0;
     font-weight: 400;
-    font-size: 6em;
+    font-size: 4em;
 }
 #mainBlock #mainGrid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
 }
 #mainGrid ul {
     display: inline-block;
-    font-size: 3em;
+    font-size: 2em;
     text-align: left;
-    margin-top: 200px;
+    margin-top: 100px;
+    list-style-type: none;
+}
+#mainGrid ul li {
+    padding: 10px 0;
+}
+#mainGrid ul li img {
+    position: relative;
+    top: 20px;
 }
 #mainGrid #advantages {
     text-align: center;
+
 }
 #applicationForm h2 {
     text-align: center;
 }
 #applicationForm {
-    border: 5px solid rgb(231, 76, 60);;
+    border: 5px solid #feac00;
     background: white;
     border-radius: 30px;
     padding: 30px;
@@ -103,7 +125,7 @@ header #menu .item:hover {
     border-radius: 5px;
     border: 0;
     color: white;
-    background: rgb(231, 76, 60);
+    background: #feac00;
     box-shadow: 0 5px 0 rgba(0, 0, 0, 0.12);
 }
 #applicationForm button:hover {
@@ -282,7 +304,7 @@ shippedProductionWrapper {
     color: white;
 }
 #productionGalleryGrid div {
-    height: 300px;
+    height: 200px;
 }
 #productionGalleryGrid div img {
     width: 100%;
@@ -328,4 +350,34 @@ shippedProductionWrapper {
 #reviewsGrid div img {
     width: 100%;
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+/*FOOOTER*/
+#footerWrapper {
+    background: #2f2f2f;
+}
+#footerGrid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color: white;
+}
+#footerGrid div {
+    text-align: center;
+    padding: 15px;
+}
+#footerGrid div h2{
+    font-size: 20px;
+}
+#footerGrid div:first-child {
+    text-align: left;
+}
+#footerGrid div:first-child img{
+    float: left;
+    margin-right: 15px;
+}
+#footerGrid .email-link {
+    color: rgb(231, 76, 60);
+    font-size: 22px;
+}
+#footerGrid #footerNumber {
+    font-size: 22px;
 }
