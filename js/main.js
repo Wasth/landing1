@@ -27,7 +27,24 @@ $(document).ready(function () {
             setCenterSide(curSlide);
         }
     });
+
+    $("#productionGalleryGrid div img").click(function () {
+        var src = $(this).attr("src");
+        var fullPath = src.split('/')[0] + '/fulls/' + src.split('/')[1];
+        $("body").prepend('<div id="popupWrapper">' +
+            '<div id="popup">' +
+            '<img class="full-img" src="'+fullPath+'">' +
+            '</div>' +
+            '</div>');
+        $("#popupWrapper").click(function () {
+            $(this).remove();
+        });
+        
+    });
 });
+
+
+
 function clearClasses(slide){
     $("#shippedSlider #slides .slide:eq("+slide+")").removeClass('center-side');
     $("#shippedSlider #slides .slide:eq("+slide+")").removeClass('left-side');

@@ -58,7 +58,10 @@ header #menu .item {
     text-transform: uppercase;
 }
 header #menu .item:hover {
-    background: rgb(231, 76, 60);;
+    background: rgb(231, 76, 60);
+}
+header #menu .active {
+    background: rgb(231, 76, 60);
 }
 /*MAIN BLOCK*/
 #mainBlockWrapper {
@@ -120,11 +123,12 @@ header #menu .item:hover {
 }
 #applicationForm button {
     width: 100%;
-    font-size: 1em;
+    font-size: 1.1em;
     padding: 15px;
     border-radius: 5px;
     border: 0;
-    color: white;
+    color: black;
+    /*font-weight: bold;*/
     background: #feac00;
     box-shadow: 0 5px 0 rgba(0, 0, 0, 0.12);
 }
@@ -309,6 +313,9 @@ shippedProductionWrapper {
 #productionGalleryGrid div img {
     width: 100%;
 }
+#productionGalleryGrid div img:hover {
+    cursor: pointer;
+}
 #productionGalleryContent {
     text-align: justify;
     color: white;
@@ -380,4 +387,28 @@ shippedProductionWrapper {
 }
 #footerGrid #footerNumber {
     font-size: 22px;
+}
+#popupWrapper {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+#popupWrapper:hover {
+    cursor: pointer;
+}
+#popup {
+    max-width: calc(90vw - 30px);
+    max-height: calc(90vh - 30px);
+    padding: 15px;
+    margin: 5vh auto;
+    background: white;
+    display: inline-block;
+}
+#popup img.full-img {
+    max-width: calc(90vw - 30px);
+    max-height: calc(90vh - 30px);
 }
