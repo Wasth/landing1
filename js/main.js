@@ -28,14 +28,7 @@ $(document).ready(function () {
         }
     });
     $("#ourProductionGrid button").click(function () {
-        var popup = $(this).parent().children(".hide").html();
-        $("body").prepend('<div id="popupWrapper">' +
-            '<div id="popup">'+popup+'</div>' +
-            '</div>');
 
-        $("#popupWrapper").click(function () {
-            $(this).remove();
-        });
     });
     $("#productionGalleryGrid div img," +
         "#ourCertificates div img," +
