@@ -12,6 +12,9 @@ b {
     max-width: 1200px;
     margin: 0 auto;
 }
+.hide {
+    display: none;
+}
 /*HEADER*/
 #headerGrid {
     display: grid;
@@ -338,6 +341,7 @@ shippedProductionWrapper {
 #ourCertificates div img {
     width: 100%;
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    cursor: pointer;
 }
 /*REVIEWS*/
 #reviewsWrapper {
@@ -357,6 +361,7 @@ shippedProductionWrapper {
 #reviewsGrid div img {
     width: 100%;
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    cursor: pointer;
 }
 /*FOOOTER*/
 #footerWrapper {
@@ -411,4 +416,5 @@ shippedProductionWrapper {
 #popup img.full-img {
     max-width: calc(90vw - 30px);
     max-height: calc(90vh - 30px);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
