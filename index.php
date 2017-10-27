@@ -1,24 +1,19 @@
 <?php
+$curPage = 0;
 if(isset($_GET['id'])) {
-    $curPage = $_GET["id"];
+    $curPage = (integer) $_GET["id"];
 }
-else {
-    $curPage = 0;
-}
-
 $menu_items = [
-    ["text"=>'Главная',"link"=>'/?id=1','id'=>1],
-    ["text"=>'Емкости и РГС',"link"=>'/?id=2','id'=>2],
-    ["text"=>'Вакуумные автоцистерны',"link"=>'/?id=3','id'=>3],
-    ["text"=>'АКН',"link"=>'/?id=4','id'=>4],
-    ["text"=>'Автотопливозаправщики',"link"=>'/?id=5','id'=>5],
-    ["text"=>'Контакты',"link"=>'/?id=6','id'=>6],
+    ["text"=>'Главная',"link"=>'?id=1','id'=>1],
+    ["text"=>'Емкости и РГС',"link"=>'?id=2','id'=>2],
+    ["text"=>'Вакуумные автоцистерны',"link"=>'?id=3','id'=>3],
+    ["text"=>'АКН',"link"=>'?id=4','id'=>4],
+    ["text"=>'Автотопливозаправщики',"link"=>'?id=5','id'=>5],
+    ["text"=>'Контакты',"link"=>'?id=6','id'=>6],
 ];
-
 if($curPage > sizeof($menu_items)) {
     $curPage = 0;
 }
-
 
 ?>
 <!DOCTYPE html>
@@ -54,7 +49,7 @@ if($curPage > sizeof($menu_items)) {
     <div id="menuWrapper">
         <div class="content" id="menu">
             <?php foreach($menu_items as $item):?>
-                <a href="<?=$item['link'] ?>"><div class="item <?= ($item['id'] == 0 or $item['id'] == $curPage) ? "active": "" ?>"><?=$item['text'] ?></div></a>
+                <a href="<?=$item['link'] ?>"><div class="item<?= (($item['id'] == 1 && $curPage == 0) or ($item['id'] == $curPage)) ? " active": "" ?>"><?=$item['text'] ?></div></a>
             <?php endforeach; ?>
         </div>
     </div>
