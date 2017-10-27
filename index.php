@@ -1,5 +1,5 @@
 <?php
-$curPage = 0;
+$curPage = 1;
 if(isset($_GET['id'])) {
     $curPage = (integer) $_GET["id"];
 }
@@ -12,7 +12,7 @@ $menu_items = [
     ["text"=>'Контакты',"link"=>'?id=6','id'=>6],
 ];
 if($curPage > sizeof($menu_items)) {
-    $curPage = 0;
+    $curPage = 1;
 }
 
 ?>
@@ -49,7 +49,7 @@ if($curPage > sizeof($menu_items)) {
     <div id="menuWrapper">
         <div class="content" id="menu">
             <?php foreach($menu_items as $item):?>
-                <a href="<?=$item['link'] ?>"><div class="item<?= (($item['id'] == 1 && $curPage == 0) or ($item['id'] == $curPage)) ? " active": "" ?>"><?=$item['text'] ?></div></a>
+                <a href="<?=$item['link'] ?>"><div class="item<?= $item['id'] == $curPage ? " active": "" ?>"><?=$item['text'] ?></div></a>
             <?php endforeach; ?>
         </div>
     </div>
