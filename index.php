@@ -268,6 +268,15 @@ if($curPage > sizeof($menu_items)) {
         <div><img src="img/gallery16.JPG" alt=""></div>
     </div>
 </div>
+<div id="formWallpaper">
+    <div class="content" id="formContent">
+        <form>
+            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Телефон">
+            <button><i class="fa fa-phone"></i> Заказать звонок</button>
+        </form>
+    </div>
+</div>
 <div class="clear" id="advantagesWrapper">
     <h1>Собственное производство</h1>
     <div class="content clear" id="advantagesContent">
