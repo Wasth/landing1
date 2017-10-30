@@ -15,6 +15,9 @@ b {
 .hide {
     display: none;
 }
+.clear {
+    clear: both;
+}
 /*HEADER*/
 #headerGrid {
     display: grid;
@@ -145,7 +148,7 @@ header #menu .active {
 #ourProductionWrapper {
     /*margin-top: 30px;*/
     background: #f1f1f1;
-    padding: 30px 0;
+    padding-bottom: 30px;
 }
 #ourProductionWrapper h1 {
     text-align: center;
@@ -157,7 +160,7 @@ header #menu .active {
 }
 #ourProductionGrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
 }
 #ourProductionGrid img {
@@ -207,8 +210,9 @@ header #menu .active {
 }
 
 /*SHIPPED PRODUCTIONS SLIDER*/
-shippedProductionWrapper {
-
+#shippedProduction h1{
+    text-align: center;
+    padding-top: 15px;
 }
 #shippedSlider {
     display: grid;
@@ -219,7 +223,7 @@ shippedProductionWrapper {
 #shippedSlider .arrow {
     text-align: center;
     color: rgb(231,76,60);
-    padding-top: 268px;
+    padding-top: 148px;
     transition: 300ms;
     z-index: 2;
 }
@@ -229,16 +233,18 @@ shippedProductionWrapper {
     transition: 300ms;
 }
 #shippedSlider #slides {
-    height: 600px;
+    height: 330px;
+    padding: 15px;
     position: relative;
     overflow: hidden;
+    /*border-bottom: 1px solid black;*/
 }
 #shippedSlider #slides .slide {
     position: absolute;
     top: 0;
     /*left: -100%;*/
     width: 100%;
-    height: 540px;
+    /*height: 540px;*/
     padding: 30px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -259,10 +265,11 @@ shippedProductionWrapper {
 }
 #shippedSlider #slides .slide .slide-img {
     overflow: hidden;
+    height: 300px;
 }
 
 #shippedSlider #slides .slide .slide-content {
-    padding-top: 100px;
+    /*height: 100%;*/
 }
 #shippedSlider #slides .slide .slide-content h2 {
     font-size: 2em;
@@ -272,12 +279,12 @@ shippedProductionWrapper {
 }
 #shippedSlider #slides .slide .slide-content p {
     font-size: 1.5em;
-    padding: 7px 0;
+    /*padding: 7px 0;*/
 }
 /*MOUNTIONG OPTIONS*/
 #mountOptions h1{
     text-align: center;
-    padding: 15px 0;
+    padding-bottom: 15px;
 }
 #optionsGrid {
     display: grid;
@@ -417,4 +424,23 @@ shippedProductionWrapper {
     max-width: calc(90vw - 30px);
     max-height: calc(90vh - 30px);
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+/*ADVANTAGES BLOCK(OWN PRODUCTION)*/
+#advantagesWrapper h1 {
+    text-align: center;
+    padding: 15px 0;
+}
+#advantagesContent .adv-block {
+    padding: 15px 0;
+}
+#advantagesContent .adv-block p{
+    font-size: 20px;
+    font-weight: normal;
+    padding: 5px;
+}
+#advantagesContent .adv-block img {
+    float: left;
+    width: 70px;
+    margin-right: 15px;
 }

@@ -5,10 +5,10 @@ if(isset($_GET['id'])) {
 }
 $menu_items = [
     ["text"=>'Главная',"link"=>'?id=1','id'=>1],
-    ["text"=>'Емкости и РГС',"link"=>'?id=2','id'=>2],
+    ["text"=>'Автотопливозаправщики',"link"=>'?id=2','id'=>2],
     ["text"=>'Вакуумные автоцистерны',"link"=>'?id=3','id'=>3],
     ["text"=>'АКН',"link"=>'?id=4','id'=>4],
-    ["text"=>'Автотопливозаправщики',"link"=>'?id=5','id'=>5],
+    ["text"=>'Емкости и РГС',"link"=>'?id=5','id'=>5],
     ["text"=>'Контакты',"link"=>'?id=6','id'=>6],
 ];
 if($curPage > sizeof($menu_items)) {
@@ -102,40 +102,31 @@ if($curPage > sizeof($menu_items)) {
     <h1>Каталог продукции</h1>
     <div class="content" id="ourProductionGrid">
         <div>
-            <img src="img/1production.jpg" alt="aa">
-            <p>Автоцистерны для <br> молока и воды</p>
-            <a href=""><button>Характеристики</button></a>
-        </div>
-        <div>
             <img src="img/2production.jpg" alt="aa">
             <p>Автотопливозаправщики <br>(АТЗ)  и бензовозы</p>
-            <a href="docs/2ch.docx"><button>Характеристики</button></a>
+            <a href="docs/atz.pdf"><button>Характеристики</button></a>
         </div>
         <div>
             <img src="img/3production.jpg" alt="aa">
             <p>Вакуумные и<br> илососные машины</p>
-            <a href="docs/3ch.docx"><button>Характеристики</button></a>
+            <a href="docs/vacuum.pdf"><button>Характеристики</button></a>
         </div>
         <div>
             <img src="img/4production.jpg" alt="aa">
-            <p>Полуприцепы<br> топливозаправщики</p>
-            <button>Характеристики</button>
-        </div>
-        <div>
-            <img src="img/5production.jpg" alt="aa">
-            <p>Полуприцепы<br> нефтевозы</p>
-            <button>Характеристики</button>
+            <p>АКН - агрегат для сбора <br> конденсата нефти</p>
+            <a href="docs/akn.pdf"><button>Характеристики</button></a>
         </div>
         <div>
             <img src="img/6production.jpg" alt="aa">
-            <p>Емкости подземные<br> ЕП и ЕПП</p>
-            <button>Характеристики</button>
+            <p>Ёмкости (РГС) <br>    подземные и наземные</p>
+            <a href="docs/ep.pdf"><button>Характеристики</button></a>
         </div>
 
     </div>
 </div>
 <div id="shippedProductionWrapper">
     <div id="shippedProduction">
+        <h1>Отгруженая продукция</h1>
         <div id="shippedSlider">
             <div class="arrow left-arrow"><i class="fa fa-arrow-circle-o-left fa-4x"></i></div>
             <div id="slides">
@@ -228,6 +219,7 @@ if($curPage > sizeof($menu_items)) {
             </div>
             <div class="arrow right-arrow"><i class="fa fa-arrow-circle-o-right  fa-4x"></i></div>
         </div>
+        <div class="clear"></div>
     </div>
 </div>
 <div id="mountOptionsWrapper">
@@ -275,6 +267,24 @@ if($curPage > sizeof($menu_items)) {
         <div><img src="img/gallery15.JPG" alt=""></div>
         <div><img src="img/gallery16.JPG" alt=""></div>
     </div>
+</div>
+<div class="clear" id="advantagesWrapper">
+    <h1>Собственное производство</h1>
+    <div class="content clear" id="advantagesContent">
+        <div class="adv-block clear">
+            <img src="img/adv1.png">
+            <p>Площадь завода – 3 500 м2. Есть открытый и закрытый склад. В штате работает более 50 человек.</p>
+        </div>
+        <div class="adv-block clear">
+            <img src="img/adv2.png">
+            <p>Производим более 20 емкостей в месяц. За 2016-ый год произвели более 300 емкостей.</p>
+        </div>
+        <div class="adv-block clear">
+            <img src="img/adv3.png">
+            <p>Продукция проходит испытания ОТК и лабораторные испытания, что подтверждено паспортом изделия и сертификатами на металл.</p>
+        </div>
+    </div>
+    <div class="clear"></div>
 </div>
 <div id="ourCertificatesWrapper">
     <h1>Наши сертификаты</h1>

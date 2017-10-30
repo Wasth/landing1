@@ -8,7 +8,7 @@ $(document).ready(function () {
     $("#shippedSlider #slides .slide .slide-img").each(function (e) {
         $(this).css({
             'background':'url(img/shipped'+(e+1)+'.jpg)',
-            'background-size': 'contain',
+            'background-size': 'cover',
             'background-repeat':"no-repeat",
             'background-position': 'center center'
         });
