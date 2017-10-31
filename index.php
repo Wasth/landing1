@@ -21,6 +21,7 @@ if($curPage > sizeof($menu_items)) {
 <head>
     <title>Нефтемаш</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -35,10 +36,10 @@ if($curPage > sizeof($menu_items)) {
             <div id="headerGrid">
                 <div>
                     <img src="img/logo.png" alt="">
-                    <h2>ООО «Нефтемаш»<br>Изготовление емкостного оборудования</h2>
+                    <h2><b>Изготовление емкостного оборудования</b><br>ООО «Нефтемаш»</h2>
                 </div>
                 <div>
-                    <h2>Расчет заказа за 50 минут<br>Быстрая доставка по всей России</h2>
+                    <h2 style="font-size: 17px">Расчет заказа за 3 часа<br>Быстрая доставка по всей России</h2>
                 </div>
                 <div>
                     <h2><span id="number">8 (800) 200-40-80</span><br><a class="email-link" href="mailto:zakaz@metiz-mk.ru">zakaz@metiz-mk.ru</a></h2>
@@ -68,12 +69,12 @@ if($curPage > sizeof($menu_items)) {
             </div>
             <div>
                 <div id="applicationForm">
-                    <h2>Бесплатный расчёт стоимости товаров партии за 50 минут</h2>
+                    <h2>Бесплатный расчёт стоимости за 3 часа</h2>
                     <input type="text" placeholder="Ваше имя"><br>
                     <input type="text" placeholder="Ваше телефон"><br>
                     <input type="text" placeholder="Ваше e-mail"><br>
                     <textarea rows="5" placeholder="Напишите здесь ваш заказ"></textarea><br>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px; margin-bottom: 30px;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px; margin-bottom: 15px;">
                         <button>Прикрепить заявку</button>
                         <button>Прикрепить реквизиты</button>
                     </div>
@@ -83,9 +84,7 @@ if($curPage > sizeof($menu_items)) {
         </div>
     </div>
 </div>
-<div style="height: 100px">
 
-</div>
 <div id="partnersBlockWrapper">
     <h1>Наши партнёры</h1>
     <div class="content" id="partnersBlock">
@@ -244,11 +243,25 @@ if($curPage > sizeof($menu_items)) {
         </div>
     </div>
 </div>
+
 <div id="productionGalleryWrapper">
     <h1>Наше производство</h1>
-    <div class="content" id="productionGalleryContent">
-        <p>«Альметьевский машиностроительный завод «Нефтемаш» и по настоящее время является единственным в Поволжье производителем малотоннажной емкостно-наливной техники — автоцистерн АЦ и АЦВ, подземных и наземных емкостей для приема, хранения и выдачи светлых и тёмных нефтепродуктов, применяемых при строительстве АЗС.</p>
+    <div class="content" id="advantagesContent">
+        <div class="adv-block clear">
+            <img src="img/adv1.png">
+            <p>Площадь завода – 3 500 м2. Есть открытый и закрытый склад. В штате работает более 50 человек.</p>
+        </div>
+        <div class="adv-block clear">
+            <img src="img/adv2.png">
+            <p>Производим более 20 емкостей в месяц. За 2016-ый год произвели более 300 емкостей.</p>
+        </div>
+        <div class="adv-block clear">
+            <img src="img/adv3.png">
+            <p>Продукция проходит испытания ОТК и лабораторные испытания, что подтверждено паспортом изделия и сертификатами на металл.</p>
+        </div>
     </div>
+    <div class="clear"></div>
+
     <div class="content" id="productionGalleryGrid">
         <div><img src="img/gallery1.JPG" alt=""></div>
         <div><img src="img/gallery2.JPG" alt=""></div>
@@ -268,24 +281,7 @@ if($curPage > sizeof($menu_items)) {
         <div><img src="img/gallery16.JPG" alt=""></div>
     </div>
 </div>
-<div class="clear" id="advantagesWrapper">
-    <h1>Собственное производство</h1>
-    <div class="content clear" id="advantagesContent">
-        <div class="adv-block clear">
-            <img src="img/adv1.png">
-            <p>Площадь завода – 3 500 м2. Есть открытый и закрытый склад. В штате работает более 50 человек.</p>
-        </div>
-        <div class="adv-block clear">
-            <img src="img/adv2.png">
-            <p>Производим более 20 емкостей в месяц. За 2016-ый год произвели более 300 емкостей.</p>
-        </div>
-        <div class="adv-block clear">
-            <img src="img/adv3.png">
-            <p>Продукция проходит испытания ОТК и лабораторные испытания, что подтверждено паспортом изделия и сертификатами на металл.</p>
-        </div>
-    </div>
-    <div class="clear"></div>
-</div>
+
 <div id="deadlinesWrapper">
     <h1>СРОКИ РАБОТЫ</h1>
     <h2 style="color:rgb(231, 76, 60); ">Средний срок производства партии:</h2>
