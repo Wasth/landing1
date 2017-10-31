@@ -268,15 +268,6 @@ if($curPage > sizeof($menu_items)) {
         <div><img src="img/gallery16.JPG" alt=""></div>
     </div>
 </div>
-<div id="formWallpaper">
-    <div class="content" id="formContent">
-        <form>
-            <input type="text" placeholder="Ваше имя">
-            <input type="text" placeholder="Телефон">
-            <button><i class="fa fa-phone"></i> Заказать звонок</button>
-        </form>
-    </div>
-</div>
 <div class="clear" id="advantagesWrapper">
     <h1>Собственное производство</h1>
     <div class="content clear" id="advantagesContent">
@@ -294,6 +285,23 @@ if($curPage > sizeof($menu_items)) {
         </div>
     </div>
     <div class="clear"></div>
+</div>
+<div id="deadlinesWrapper">
+    <h1>СРОКИ РАБОТЫ</h1>
+    <h2 style="color:rgb(231, 76, 60); ">Средний срок производства партии:</h2>
+
+    <h2>10-15 дней против 20–30 у большинства производителей</h2>
+</div>
+<div id="formWrapper">
+    <h1><span style="color: rgb(231, 76, 60);">Нужна консультация?</span> Свяжитесь со специалистом!</h1>
+    <h2>Бесплатная линия для звонков из России: 8 (800) 500-23-37</h2>
+    <div class="content" id="formContent">
+        <form>
+            <input type="text" placeholder="Ваше имя">
+            <input type="number" placeholder="Телефон">
+            <button><i class="fa fa-phone"></i> Заказать звонок</button>
+        </form>
+    </div>
 </div>
 <div id="ourCertificatesWrapper">
     <h1>Наши сертификаты</h1>
