@@ -103,22 +103,22 @@ if($curPage > sizeof($menu_items)) {
         <div>
             <img src="img/2production.jpg" alt="aa">
             <p>Автотопливозаправщики <br>(АТЗ)  и бензовозы</p>
-            <a href="docs/atz.pdf"><button>Характеристики</button></a>
+            <a href="docs/atz.pdf"><button>Скачать характеристики</button></a>
         </div>
         <div>
             <img src="img/3production.jpg" alt="aa">
             <p>Вакуумные и<br> илососные машины</p>
-            <a href="docs/vacuum.pdf"><button>Характеристики</button></a>
+            <a href="docs/vacuum.pdf"><button>Скачать характеристики</button></a>
         </div>
         <div>
             <img src="img/4production.jpg" alt="aa">
             <p>АКН - агрегат для сбора <br> конденсата нефти</p>
-            <a href="docs/akn.pdf"><button>Характеристики</button></a>
+            <a href="docs/akn.pdf"><button>Скачать характеристики</button></a>
         </div>
         <div>
             <img src="img/6production.jpg" alt="aa">
             <p>Ёмкости (РГС) <br>    подземные и наземные</p>
-            <a href="docs/ep.pdf"><button>Характеристики</button></a>
+            <a href="docs/ep.pdf"><button>Скачать характеристики</button></a>
         </div>
 
     </div>
@@ -288,17 +288,7 @@ if($curPage > sizeof($menu_items)) {
 
     <h2>10-15 дней против 20–30 у большинства производителей</h2>
 </div>
-<div id="formWrapper">
-    <h1><span style="color: rgb(231, 76, 60);">Нужна консультация?</span> Свяжитесь со специалистом!</h1>
-    <h2>Бесплатная линия для звонков из России: 8 (800) 500-23-37</h2>
-    <div class="content" id="formContent">
-        <form>
-            <input type="text" placeholder="Ваше имя">
-            <input type="number" placeholder="Телефон">
-            <button><i class="fa fa-phone"></i> Заказать звонок</button>
-        </form>
-    </div>
-</div>
+
 <div id="ourCertificatesWrapper">
     <h1>Наши сертификаты</h1>
     <div class="content" id="ourCertificates">
@@ -317,6 +307,17 @@ if($curPage > sizeof($menu_items)) {
         <div><img src="img/5review.jpg" alt=""></div>
         <div><img src="img/6review.jpg" alt=""></div>
 
+    </div>
+</div>
+<div id="formWrapper">
+    <h1><span style="color: rgb(231, 76, 60);">Нужна консультация?</span> Свяжитесь со специалистом!</h1>
+    <h2>Бесплатная линия для звонков из России: 8 (800) 500-23-37</h2>
+    <div class="content" id="formContent">
+        <form>
+            <input type="text" placeholder="Ваше имя">
+            <input type="number" placeholder="Телефон">
+            <button><i class="fa fa-phone"></i> Заказать звонок</button>
+        </form>
     </div>
 </div>
 <footer>
