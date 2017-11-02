@@ -383,6 +383,8 @@ if($curPage > sizeof($menu_items)) {
     </div>
 </div>
     <?php endif;?>
+
+    <?php if($curPage != 5):?>
 <div id="mountOptionsWrapper">
     <div class="content" id="mountOptions">
         <h1>Варианты монтажа</h1>
@@ -405,6 +407,7 @@ if($curPage > sizeof($menu_items)) {
         </div>
     </div>
 </div>
+    <?php endif; ?>
 <div id="productionGalleryWrapper">
     <h1>Наше производство</h1>
     <div class="content" id="advantagesContent">
@@ -444,7 +447,7 @@ if($curPage > sizeof($menu_items)) {
 </div>
 <div id="deadlinesWrapper">
     <h1>СРОКИ РАБОТЫ</h1>
-    <h2 style="color:rgb(231, 76, 60); ">Средний срок производства партии:</h2>
+    <h2 style="color:rgb(231, 76, 60); ">Средний срок производства:</h2>
 
     <h2>10-15 дней против 20–30 у большинства производителей</h2>
 </div>
