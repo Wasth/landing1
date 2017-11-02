@@ -1,4 +1,4 @@
-var curSlide = 0    ;
+var curSlide = 0;
 $(document).ready(function () {
     $("#shippedSlider #slides div.slide").each(function (i) {
         if(i < curSlide) $(this).addClass("left-side");
@@ -67,3 +67,4 @@ function setCenterSide(slide) {
     clearClasses(slide);
     $("#shippedSlider #slides .slide:eq("+slide+")").addClass('center-side');
 }
+

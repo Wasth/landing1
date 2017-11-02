@@ -1,3 +1,6 @@
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -195,7 +198,7 @@ header #menu .active {
     /*width: 70%;*/
     margin: 10px auto;
 }
-#ourProductionGrid div button {
+#ourProductionGrid div button , #buttonContent button{
     width: 100%;
     padding: 15px 0;
     border: 0;
@@ -207,7 +210,7 @@ header #menu .active {
     box-shadow: 0 5px 0 rgba(0, 0, 0, 0.12);
 
 }
-#ourProductionGrid div button:hover {
+#ourProductionGrid div button:hover ,#buttonContent button:hover{
     box-shadow: 0 0 0 rgba(0,0,0,0);
     position: relative;
     top: 5px;
@@ -523,4 +526,40 @@ header #menu .active {
 #deadlinesWrapper h2 {
     text-align: center;
     padding: 10px;
+}
+/* BUTTON FOR DOWLNOAD CHARACS  */
+#buttonContent button {
+    font-size: 1.2em;
+}
+#buttonContent {
+    padding: 30px;
+}
+/*CONTACTS BLOCK*/
+
+#contactsBlock {
+    min-height: calc(100vh - 269px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+}
+#contactsBlock h2 {
+    color: rgb(231, 76, 60);
+    text-align: center;
+    font-weight: normal;
+    margin-top: 30px;
+}
+#contactsBlock p {
+    text-align: center;
+    padding: 15px 0;
+}
+#contactsBlock #number {
+    font-size: 1.5em;
+}
+#contactsBlock #linkToMail a{
+    color: #e74c3c;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+#contactsBlock #linkToMail a:hover {
+    text-decoration: underline;
 }

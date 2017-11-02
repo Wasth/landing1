@@ -374,6 +374,15 @@ if($curPage > sizeof($menu_items)) {
         <div class="clear"></div>
     </div>
 </div>
+    <?php if($curPage != 1):?>
+<div id="buttonWallpaper">
+    <div class="content" id="buttonContent">
+        <a href="<?= "docs/".$curPage."doc.pdf" ?>"><button>
+            Скачать характеристики
+        </button></a>
+    </div>
+</div>
+    <?php endif;?>
 <div id="mountOptionsWrapper">
     <div class="content" id="mountOptions">
         <h1>Варианты монтажа</h1>
@@ -471,10 +480,21 @@ if($curPage > sizeof($menu_items)) {
     </div>
 </div>
 <?php else: ?>
-    <div id="contacts-block">
+    <div class="content" id="contactsBlock">
+        <div>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=w4szqFdwqSgD-Mrfe1K-5_Z6KEeAI-iu&amp;width=718&amp;height=457&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+        </div>
+        <div>
+            <h2>ООО «Нефтемаш»</h2>
 
+            <p id="adress">Республика Татарстан, г. Альметьевск, ул. Объездная, д.5</p>
+            <p id="number">
+            8 (800) 200-40-80<br>
+            факс: 8 (8553) 44-03-27
+            </p>
+            <p id="linkToMail"><a href="mailto:sale@metiz-mk.ru">sale@metiz-mk.ru</a></p>
+        </div>
     </div>
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=w4szqFdwqSgD-Mrfe1K-5_Z6KEeAI-iu&amp;width=718&amp;height=457&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
 <?php endif; ?>
 <footer>
     <div id="footerWrapper">
@@ -496,4 +516,6 @@ if($curPage > sizeof($menu_items)) {
 </footer>
 </body>
 </html>
+
+
 
