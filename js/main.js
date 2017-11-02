@@ -18,6 +18,14 @@ $(document).ready(function () {
             setLeftSide(curSlide);
             curSlide++;
             setCenterSide(curSlide);
+        }else if (curSlide == ($("#shippedSlider #slides div.slide").length-1)) {
+            curSlide = 0;
+            $("#shippedSlider #slides div.slide").removeClass("left-side right-side center-side");
+            $("#shippedSlider #slides div.slide").each(function (i) {
+                if(i < curSlide) $(this).addClass("left-side");
+                if(i > curSlide) $(this).addClass("right-side");
+            });
+            $("#shippedSlider #slides .slide:eq("+curSlide+")").addClass('center-side');
         }
     });
     $(".right-arrow").on('click',function () {
@@ -25,6 +33,15 @@ $(document).ready(function () {
             setRightSide(curSlide);
             curSlide--;
             setCenterSide(curSlide);
+        }
+        else if (curSlide == 0) {
+            curSlide = $("#shippedSlider #slides div.slide").length-1;
+            $("#shippedSlider #slides div.slide").removeClass("left-side right-side center-side");
+            $("#shippedSlider #slides div.slide").each(function (i) {
+                if(i < curSlide) $(this).addClass("left-side");
+                if(i > curSlide) $(this).addClass("right-side");
+            });
+            $("#shippedSlider #slides .slide:eq("+curSlide+")").addClass('center-side');
         }
     });
 
