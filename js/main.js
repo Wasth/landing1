@@ -7,7 +7,7 @@ $(document).ready(function () {
     $("#shippedSlider #slides .slide:eq("+curSlide+")").addClass('center-side');
     $("#shippedSlider #slides .slide .slide-img").each(function (e) {
         $(this).css({
-            'background':'url(img/slider-img/shipped'+(e+1)+'.jpg)',
+            'background':'url(img/slider-img/shipped'+(e+1)+'.JPG)',
             'background-size': 'cover',
             'background-repeat':"no-repeat",
             'background-position': 'center center'
