@@ -27,12 +27,10 @@ b {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     color: rgb(68, 68, 68);
-
 }
 #headerGrid div {
     text-align: center;
     padding: 15px;
-
 }
 #headerGrid div h2 {
     font-size: 15px;
@@ -253,14 +251,14 @@ header #menu .active {
     background: #ffefee;
     transition: 300ms;
 }
-#shippedSlider #slides {
+#shippedSlider .slides {
     height: 330px;
     padding: 15px;
     position: relative;
     overflow: hidden;
     /*border-bottom: 1px solid black;*/
 }
-#shippedSlider #slides .slide {
+#shippedSlider .slides .slide {
     position: absolute;
     top: 0;
     /*left: -100%;*/
@@ -273,32 +271,32 @@ header #menu .active {
     transition: 300ms;
 }
 
-#shippedSlider #slides .left-side {
+#shippedSlider .slides .left-side {
     left: -100%;
     transition: 300ms;
 }
-#shippedSlider #slides .right-side {
+#shippedSlider .slides .right-side {
     left: 100%;
     transition: 300ms;
 }
-#shippedSlider #slides .center-side {
+#shippedSlider .slides .center-side {
     left: 0;
 }
-#shippedSlider #slides .slide .slide-img {
+#shippedSlider .slides .slide .slide-img {
     overflow: hidden;
     height: 300px;
 }
 
-#shippedSlider #slides .slide .slide-content {
+#shippedSlider .slides .slide .slide-content {
     /*height: 100%;*/
 }
-#shippedSlider #slides .slide .slide-content h2 {
+#shippedSlider .slides .slide .slide-content h2 {
     font-size: 2em;
     padding: 7px 0;
     font-weight: bold;
     color: rgb(231,76,60);
 }
-#shippedSlider #slides .slide .slide-content p {
+#shippedSlider .slides .slide .slide-content p {
     font-size: 1.5em;
     /*padding: 7px 0;*/
 }
@@ -356,6 +354,7 @@ header #menu .active {
 /*OUR CERTIFICATES*/
 #ourCertificatesWrapper {
     padding-bottom: 15px;
+    background: #f1f1f1;
 }
 #ourCertificatesWrapper h1 {
     text-align: center;
@@ -373,7 +372,7 @@ header #menu .active {
 }
 /*REVIEWS*/
 #reviewsWrapper {
-    background: #f1f1f1;
+    /*background: #f1f1f1;*/
     padding-bottom: 30px;
 }
 #reviewsWrapper h1 {
@@ -392,19 +391,24 @@ header #menu .active {
     cursor: pointer;
 }
 /*FOOOTER*/
-#footerWrapper {
-    background: #2f2f2f;
+footer {
+    background: #eaeaea;
 }
 #footerGrid {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    color: white;
+    color: rgb(68, 68, 68);
+
 }
 #footerGrid div {
     text-align: center;
     padding: 15px;
 }
-#footerGrid div h2{
+#footerGrid div h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+#footerGrid div h2 b {
     font-size: 20px;
 }
 #footerGrid div:first-child {
@@ -417,10 +421,18 @@ header #menu .active {
 #footerGrid .email-link {
     color: rgb(231, 76, 60);
     font-size: 22px;
+    font-weight: normal;
+    text-decoration: none;
+}
+#footerGrid .email-link:hover {
+    text-decoration: underline;
 }
 #footerGrid #footerNumber {
     font-size: 22px;
+    font-weight: normal;
 }
+
+/*POPUPS STYLE*/
 #popupWrapper {
     width: 100vw;
     height: 100vh;
@@ -563,4 +575,76 @@ header #menu .active {
 }
 #contactsBlock #linkToMail a:hover {
     text-decoration: underline;
+}
+/*ADVANTAGES SLIDER*/
+#advantagesSliderWrapper h1{
+    text-align: center;
+    padding-top: 15px;
+}
+#advantagesSlider {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-column-gap: 30px;
+    min-width: 1200px;
+}
+#advantagesSlider .arrow {
+    text-align: center;
+    color: rgb(231,76,60);
+    padding-top: 148px;
+    transition: 300ms;
+    z-index: 2;
+}
+#advantagesSlider .arrow:hover {
+    cursor:pointer;
+    background: #ffefee;
+    transition: 300ms;
+}
+#advantagesSlider .slides {
+    height: 330px;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    /*border-bottom: 1px solid black;*/
+}
+#advantagesSlider .slides .slide {
+    position: absolute;
+    top: 0;
+    /*left: -100%;*/
+    width: 100%;
+    /*height: 540px;*/
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+    transition: 300ms;
+}
+
+#shippedSlider .slides .left-side {
+    left: -100%;
+    transition: 300ms;
+}
+#shippedSlider .slides .right-side {
+    left: 100%;
+    transition: 300ms;
+}
+#shippedSlider .slides .center-side {
+    left: 0;
+}
+#shippedSlider .slides .slide .slide-img {
+    overflow: hidden;
+    height: 300px;
+}
+
+#shippedSlider .slides .slide .slide-content {
+    /*height: 100%;*/
+}
+#shippedSlider .slides .slide .slide-content h2 {
+    font-size: 2em;
+    padding: 7px 0;
+    font-weight: bold;
+    color: rgb(231,76,60);
+}
+#shippedSlider .slides .slide .slide-content p {
+    font-size: 1.5em;
+    /*padding: 7px 0;*/
 }

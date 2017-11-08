@@ -137,7 +137,7 @@ if($curPage > sizeof($menu_items)) {
         <h1>Отгруженая продукция</h1>
         <div id="shippedSlider">
             <div class="arrow left-arrow"><i class="fa fa-arrow-circle-o-left fa-4x"></i></div>
-            <div id="slides">
+            <div class="slides">
                 <div class="slide">
                     <div class="slide-img"></div>
                     <div class="slide-content">
@@ -451,6 +451,22 @@ if($curPage > sizeof($menu_items)) {
 
     <h2>10-15 дней против 20–30 у большинства производителей</h2>
 </div>
+    <?php if($curPage != 5):?>
+        <div id="advantagesSliderWrapper">
+            <h1>Преимущества наших автоцистерн</h1>
+            <div id="advantagesSlider">
+                <div class="arrow left-arrow"><i class="fa fa-arrow-circle-o-left fa-4x"></i></div>
+                <div class="slides">
+                    <div class="slide">
+
+                    </div>
+                </div>
+                <div class="arrow right-arrow"><i class="fa fa-arrow-circle-o-right  fa-4x"></i></div>
+            </div>
+        </div>
+    <?php endif; ?>
+
+
 <div id="ourCertificatesWrapper">
     <h1>Наши сертификаты</h1>
     <div class="content" id="ourCertificates">
@@ -505,10 +521,10 @@ if($curPage > sizeof($menu_items)) {
             <div id="footerGrid">
                 <div>
                     <img src="img/logo.png" alt="">
-                    <h2>ООО «Нефтемаш»<br>Изготовление емкостного оборудования</h2>
+                    <h2><b>Изготовление емкостного оборудования</b><br>ООО «Нефтемаш»</h2>
                 </div>
                 <div>
-                    <h2>Расчет заказа за 50 минут<br>Быстрая доставка по всей России</h2>
+                    <h2 style="font-size: 17px">Расчет заказа за 3 часа<br>Быстрая доставка по всей России</h2>
                 </div>
                 <div>
                     <h2><span id="footerNumber">8 (800) 200-40-80</span><br><a class="email-link" href="mailto:zakaz@metiz-mk.ru">zakaz@metiz-mk.ru</a></h2>
