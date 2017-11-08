@@ -577,6 +577,9 @@ footer {
     text-decoration: underline;
 }
 /*ADVANTAGES SLIDER*/
+#advantagesSliderWrapper {
+    padding-bottom: 15px;
+}
 #advantagesSliderWrapper h1{
     text-align: center;
     padding-top: 15px;
@@ -609,28 +612,37 @@ footer {
 #advantagesSlider .slides .slide {
     position: absolute;
     top: 0;
-    /*left: -100%;*/
     width: 100%;
-    /*height: 540px;*/
     padding: 30px 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
     grid-column-gap: 15px;
     transition: 300ms;
+    text-align: center;
 }
-
-#shippedSlider .slides .left-side {
+#advantagesSlider .slides .slide h4 {
+    font-weight: bold;
+}
+#advantagesSlider .slides .slide div img {
+    max-width: 325px;
+    height: 216px;
+}
+#advantagesSlider .slides .slide div ul li{
+    margin-left: 70px;
+    text-align: left;
+}
+#advantagesSlider .slides .left-side {
     left: -100%;
     transition: 300ms;
 }
-#shippedSlider .slides .right-side {
+#advantagesSlider .slides .right-side {
     left: 100%;
     transition: 300ms;
 }
-#shippedSlider .slides .center-side {
+#advantagesSlider .slides .center-side {
     left: 0;
 }
-#shippedSlider .slides .slide .slide-img {
+#advantagesSlider .slides .slide .slide-img {
     overflow: hidden;
     height: 300px;
 }
